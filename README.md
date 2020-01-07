@@ -9,6 +9,7 @@ Development
 **what is VPN??**
 
 |Protocols |Created by       |Used in |
+|-|------------- |
 |VPN       |Gurdeep Sighpall |Private network browsing |
 
 ------
