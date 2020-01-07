@@ -6,7 +6,7 @@ int main() {
   int year= 0;
   printf("Enter random year numbers ex.2020\n");
   scanf("%d",&year);
-  if (&year % 4) {
+  if (year % 4) {
     printf("&year is a leap year\n");
   }
   else{
