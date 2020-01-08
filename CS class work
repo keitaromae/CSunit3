@@ -1,0 +1,160 @@
+NO1.
+
+#include <stdio.h>
+
+//This program will check your input number is even or odd.
+//ex.input 15, output "15 is an odd number"
+
+int main() {
+  int num= 0;
+  printf("Enter a number ex.2020\n");
+  scanf("%i",&num);
+  if ((num % 2)==0) {
+    printf("%i is an even number",num);
+  }
+  else{
+    printf("%i is an odd number",num);
+  }
+  return 0;
+}
+
+--------------------------------------------------
+
+NO2.
+
+#include <stdio.h>
+
+//This program will check your input number is positive or 
+//negative
+//ex. input 15, output "15 is a positive number"
+
+int main() {
+  int num= 0;
+  printf("Enter a number ex.2020\n");
+  scanf("%i",&num);
+  if (num >= 0) {
+    printf("%i is a positive number",num);
+  }
+  else{
+    printf("%i is a negative number",num);
+  }
+  return 0;
+}
+
+
+--------------------------------------------------
+
+NO3.
+
+#include <stdio.h>
+
+//This program will check wheather you have right to vote in Japanese law
+//If you're over 18 you can vote, if you aren't you can't.
+
+int main() {
+  int num= 0;
+  printf("Enter your age ex. 19\n");
+  scanf("%i",&num);
+  if (num >= 18) {
+    printf("You are able to vote! since you're %i years old",num);
+  }
+  else{
+    printf("You can not vote yet since you're %i years old",num);
+  }
+  return 0;
+}
+
+
+--------------------------------------------------
+
+NO4.
+
+#include <stdio.h>
+
+//
+
+int main() {
+  int num= 0, k, l;
+  printf("Enter 3 numbers\n");
+  scanf("%i",&num);
+  scanf("%i",&k);
+  scanf("%i",&l);
+  if ((num -) {
+    printf("",num);
+  }
+  else{
+    printf("",num);
+  }
+  return 0;
+}
+
+
+--------------------------------------------------
+
+NO5.
+
+
+--------------------------------------------------
+
+NO6.
+
+#include <stdio.h>
+
+//This program checks wheather candidate is eligible for admission or not.
+//math >= 65, phy >= 55, chem >= 50
+
+int main() {
+  int num= 0, k, l;
+  printf("Enter your marks of 3 different subjects.\n");
+  printf("Math:  , Phy:  , Chem:  ");
+  scanf("%i",&num);
+  scanf("%i",&k);
+  scanf("%i",&l);
+  if (( num + k + l ) >= 180) {
+    printf("Math %i, Phy %i, Chem %i",num, k, l);
+    printf(" The candidate is eligible for admission.\n");
+  }
+  else{
+    printf("Math %i, Phy %i, Chem %i",num, k, l);
+    printf(" The candidate is NOT eligible for admission.\n");
+  }
+  return 0;
+}
+
+
+
+--------------------------------------------------
+
+NO7.
+
+#include <stdio.h>
+
+//
+
+int main() {
+  int num= 0;
+  printf("Enter the tempreture in centigrade ex. 25\n");
+  scanf("%i",&num);
+  if (num < 0) {
+    printf("%i°C Freezing weather",num);
+  }
+  else if( 0<=num<=10){
+    printf("%i°C Very cold weather",num);
+  }
+  else if( 10<=num<=20){
+    printf("%i°C Cold weather",num);
+  }
+  else if( 20<=num<=30){
+    printf("%i°C Normal in Temp",num);
+  }
+  else if( 30<=num<=40){
+    printf("%i°C Its Hot",num);
+  }
+  else if(num >= 40){
+    printf("%i°C Its Very Hot",num);
+  }
+  else{
+    printf("Please input the number");
+  }
+  return 0;
+}
