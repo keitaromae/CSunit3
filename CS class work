@@ -94,6 +94,38 @@ int main() {
 NO5.
 
 
+
+#include <stdio.h>
+
+//This program shows which quadrant they belong to
+
+int main() {
+  int num= 0, k;
+  printf("Enter X and Y numbers\n");
+  printf("ex. 7 9\n");
+
+  scanf("%i",&num);
+  scanf("%i",&k);
+  
+  if (num >= 1 & k >= 1) {
+    printf("The coordinate point (%i, %i) lies in the First quadrant.",num, k);
+  }
+  else if (num >= 1 & k <= 1) {
+    printf("The coordinate point (%i, %i) lies in the Second quadrant.",num, k);
+  }
+  else if (num <= 1 & k <= 1) {
+    printf("The coordinate point (%i, %i) lies in the Third quadrant.",num, k);
+  }
+  else if (num <= 1 & k >= 1) {
+    printf("The coordinate point (%i, %i) lies in the Fourth quadrant.",num, k);
+  }
+  else {
+    printf("Input doesn't exist");
+  }
+
+  return 0;
+}
+
 --------------------------------------------------
 
 NO6.
@@ -129,7 +161,7 @@ NO7.
 
 #include <stdio.h>
 
-//
+//This program shows a suitable message according to its input temperature.
 
 int main() {
   int num= 0;
@@ -156,5 +188,109 @@ int main() {
   else{
     printf("Please input the number");
   }
+  return 0;
+}
+
+
+
+
+--------------------------------------------------
+
+NO8.
+
+#include <studio.h>
+
+//check triangle is equilateral, ososceles or scalene.
+
+int main() {
+  int num= 0, k, l;
+  printf("Enter 3 angles of the triangle ex.60 60 60\n");
+  scanf("%i",&num);
+  scanf("%i",&k);
+  scanf("%i",&l);
+
+  if ((k = l = num) < 60) {
+    printf("This is an isosceles triangle.");
+  }
+  else if ((num & l & k) == 60) {
+    printf("This is an Equilateral triangle.");
+  }
+  else if (num != l & num != k) {
+    printf("This is an Scalene triangle.");
+  }
+  else {
+    printf("This is not a triangle.");
+  }
+  return 0;
+}
+
+
+
+--------------------------------------------------
+
+NO9.
+
+#include <stdio.h>
+
+//This program check whether a triangle can be formed by the given value for the angles.
+
+int main() {
+  int num= 0, k, l;
+  printf("Enter 3 angles of the triangle ex.60 60 60\n");
+  scanf("%i",&num);
+  scanf("%i",&k);
+  scanf("%i",&l);
+
+  if ((k + l + num) == 180) {
+    printf("Triangle can be formed");
+  }
+  else {
+    printf("This triangle is not valid.");
+  }
+  return 0;
+}
+
+
+
+
+--------------------------------------------------
+
+NO10.
+
+#include <stdio.h>
+
+//
+
+int main() {
+  int num= 0, k, l;
+  printf("Enter your customer ID, name and unit consumed by you\n");
+  printf("ex. 1001 James 800\n");
+
+  scanf("%i",&num);
+  scanf("%d",&k);
+  scanf("%i",&l);
+
+  if (l <= 199 & l >= 100) {
+    printf("\n");
+    printf("Customer IDNO: %i \n",num);
+    printf("Customer Name: %d \n",k);
+    printf("unit Consumed: %i \n",l);
+    printf("Amount Charges @Rs. 1.20 per unit: \n");
+    printf("Surchage Amount: \n");
+    printf("Net Amount Paid By The Customer: \n");
+  }
+  else if (l<= 399 & l>= 200) {
+    printf("yo");
+  }
+  else if (l<= 599 & l>= 400) {
+    printf("ho");
+  }
+  else if (l>= 600) {
+    printf("xo");
+  }
+  else {
+    printf("no");
+  }
+
   return 0;
 }
