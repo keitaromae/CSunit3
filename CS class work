@@ -69,6 +69,9 @@ int main() {
 
 NO4.
 
+
+
+
 #include <stdio.h>
 
 //
@@ -76,15 +79,33 @@ NO4.
 int main() {
   int num= 0, k, l;
   printf("Enter 3 numbers\n");
+  printf("ex. 1001 20 800\n");
+
   scanf("%i",&num);
   scanf("%i",&k);
-  scanf("%i",&l);
-  if ((num -) {
-    printf("",num);
+  scanf("%i",&l); 
+
+  if (num < k & k < l & num < l) {
+    printf("1st# %i, 2nd# %i, 3rd# %i",num, k, l);
   }
-  else{
-    printf("",num);
+  else if (num < l & l < k & num < k) {
+    printf("1st# %i, 2nd# %i, 3rd# %i",num, l, k);
   }
+  else if (num < k & num > l & k > l) {
+    printf("1st# %i, 2nd# %i, 3rd# %i",l, num, k);
+  }
+  else if (num < l & num > k & k < l) {
+    printf("1st# %i, 2nd# %i, 3rd# %i",k, num, l);
+  }
+  else if (num > l & num > k & k > l) {
+    printf("1st# %i, 2nd# %i, 3rd# %i",l, k, num);
+  }
+  else if (num > l & num > k & k < l) {
+    printf("1st# %i, 2nd# %i, 3rd# %i",k, l, num);
+  }
+
+  
+
   return 0;
 }
 
@@ -170,16 +191,16 @@ int main() {
   if (num < 0) {
     printf("%i°C Freezing weather",num);
   }
-  else if( 0<=num<=10){
+  else if( 0<=num & num <=10){
     printf("%i°C Very cold weather",num);
   }
-  else if( 10<=num<=20){
+  else if( 10<=num & num <=20){
     printf("%i°C Cold weather",num);
   }
-  else if( 20<=num<=30){
+  else if( 20<=num & num <=30){
     printf("%i°C Normal in Temp",num);
   }
-  else if( 30<=num<=40){
+  else if( 30<=num & num <=40){
     printf("%i°C Its Hot",num);
   }
   else if(num >= 40){
@@ -190,7 +211,6 @@ int main() {
   }
   return 0;
 }
-
 
 
 
