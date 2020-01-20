@@ -42,6 +42,31 @@ int main () {
    return 0;
 }
 ```
+
+
+**Reading texts in standard c**
+
+This program reads the input of user and output to isak's email format.
+```
+#include <stdio.h>
+ 
+int main () {
+
+   int year= 0;
+   char str1[100];
+   char str2[100];
+   printf("Enter your school year, first_name and last_name.\n");
+   printf("Example 2021 keitaro mae\n");
+
+   scanf("%d", &year);
+   scanf("%s", &str1);
+   scanf("%s", &str2);
+
+   printf("%d.%s.%s@uwcisak.jp",year, str1, str2);
+
+   return 0;
+}
+```
 Evaluation
 ------
 
