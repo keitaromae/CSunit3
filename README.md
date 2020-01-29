@@ -67,6 +67,32 @@ int main () {
    return 0;
 }
 ```
+
+**//Python Bubble Code**
+
+```
+# Defining a array or list in python
+# Comparing 2 numbers
+val = [34, 4, 56, 13, 12, 45, 6, 7, 78, 67, 45, 34, 23]
+n = len(val)
+
+for x in range(n-1):
+    ele_left = val[x]
+    ele_right = val[x+1]
+    print("Current number {}, next number {}".format(ele_left, ele_right))
+
+    if ele_left < ele_right:
+        print("{} is smaller than {}".format(ele_left, ele_right))
+
+    elif ele_left > ele_right:
+        print("{} is bigger than {}".format(ele_left, ele_right))
+        a, b = val.index(x), val.index(x+1)
+        val[b], val[a] = val[a], val[b]
+
+    else:
+        print("They are both equal")
+```
+
 Evaluation
 ------
 
