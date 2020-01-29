@@ -68,7 +68,7 @@ int main () {
 }
 ```
 
-**//Python Bubble Code**
+**//Python Bubble Sort**
 
 ```
 # Defining a array or list in python
