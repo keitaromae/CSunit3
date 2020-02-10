@@ -13,7 +13,7 @@ Table of contents
 1. [Planning](#Planning)
 1. [Design](#Design)
 1. [Development](#Development)
-1. [Testing](#Testing_and_implementation)
+1. [Testing](#Testing)
 
 Planning
 -------
@@ -24,5 +24,5 @@ Design
 Development
 -----
 
-Testing and implementation
+Testing
 -----
