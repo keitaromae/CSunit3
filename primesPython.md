@@ -1,6 +1,6 @@
-|No.|Prime number in python      |
+|ver.|Prime number in python      |
 |-|------------- |
-|①| First code, simply using for loop to check every possibility and list out the answers. **although it took so much time**  | 
+|①| First code, simply using for loop to check every possibility and list out the answers. ***although it took so much time***  | 
 |②| Second code, using for loop to check out until the square root of the number this program made the entire process more simple and efficient. |
 |③| Last code, added some line that tests only odd divisors when the n is an even number. This makes the program to do less work. |
 
