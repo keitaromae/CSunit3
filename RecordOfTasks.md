@@ -8,6 +8,13 @@ This table reflects the five stages of design: Planning, design, development, te
 |    2   |                |                  |                |                   |          |
 |    3   |                |                  |                |                   |          |
 
+Table of contents
+----
+1. [Planning](#Planning)
+1. [Design](#Design)
+1. [Development](#Development)
+1. [Testing and implementation](#Testing and implementation)
+
 Planning
 -------
 
