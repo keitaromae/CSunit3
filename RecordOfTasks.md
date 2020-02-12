@@ -24,6 +24,7 @@ Design
 Development
 -----
 
+**hashlib**
 ```
 import myLib
 
@@ -57,6 +58,13 @@ else:
 ```
 
 **Registration**
+~flow~
+1. Input username
+2. Input password
+3. Confirm password
+4. Generate salt
+5. Use the hash lib function
+6. store info user_dict
 
 Testing
 -----
