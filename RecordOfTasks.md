@@ -58,7 +58,6 @@ else:
 ```
 
 **Registration**
-~flow~
 1. Input username
 2. Input password
 3. Confirm password
