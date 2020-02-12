@@ -55,5 +55,8 @@ if key == key_check:
 else:
     print("Login invalid")
 ```
+
+**Registration**
+
 Testing
 -----
