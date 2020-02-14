@@ -156,6 +156,19 @@ for letter in extract:
 
 print(total)
 ```
+**Encrypting the message**
+```
+print("This program encrypts the inputted letter into unicode")
+print("Type your message here: ")
+
+message = input()
+print("Type your additional # here: ")
+add = int(input())
+
+for letter in message:
+    newletter = chr(ord(letter) + add)
+    print(newletter)
+```
 
 Testing
 -----
