@@ -64,6 +64,36 @@ else:
 4. Generate salt
 5. Use the hash lib function
 6. store info user_dict
+```
+import myLib
 
+myLib.me()
+
+# Define cities' location
+cities = [(3, 5), (9, 10), (7, 8), (15, 7)]
+
+
+for index in range(4):
+    cityA = cities[index]
+    for index_2 in range(index+1, 4):
+        cityB = cities[index_2]
+        d = myLib.distance(target=cityA, origin=cityB)
+        print("Distance between city {} and {} is {}".format(index, index_2, d))
+
+import hashlib
+import os
+# testing the hash algorithm
+password = "123456"
+salt = os.urandom(32)
+key = hashlib.pbkdf2_hmac('sha256', password.encode('utf-8'), salt, 1000)
+print(key)
+
+password_entered = "12345"
+key_check = hashlib.pbkdf2_hmac('sha256', password_entered.encode('utf-8'), salt, 1000)
+if key == key_check:
+    print("Login successful")
+else:
+    print("Login invalid")
+```
 Testing
 -----
