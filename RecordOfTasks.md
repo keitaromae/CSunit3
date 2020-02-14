@@ -102,6 +102,60 @@ user['password-hash'] = key
 user['salt'] = salt
 ```
 **manipulating strings**
+```
+# Question 1
+# open the txt file
+file = open("extract", "r")
+extract = file.read()
+
+print(extract)
+
+words = extract.split()
+print(words)
+print("Answer to Q1: ", len(words), "words")
+print(" ")
+
+# Question 2
+keywords = ('house', 'worker', 'master', 'hard', 'responsible', 'skillful')
+
+for kwd in keywords:
+    print("Checking for word {} in the text: ".format(kwd))
+    print(kwd in extract)
+    print(" ")
+
+# Question 3
+name = 'john'
+print(f"hello {name}")
+print(" ")
+countAlpha = 0
+for letter in extract:
+    if letter.isalpha():
+        countAlpha += 1
+
+print(f'There are {countAlpha} letters out of {len(extract)} total.')
+
+# Q4. Make the text all lowercase.
+print(extract.upper()) # every thing in to upper case extract.capitalize makes first letter upper
+print(extract.lower()) # every letter in lower case
+
+# Q5 text longer than 5 characters
+wordsLong = list(filter(lambda x: len(x)>5, words))
+len(wordsLong)
+print(len(wordsLong))
+print('#'.join(wordsLong))
+
+# code below does the same
+# for word in words:
+    # if len(word)>5:
+        # print('#', word)
+
+# Question 6
+total = 0
+for letter in extract:
+    total += ord(letter)
+
+print(total)
+```
 
 Testing
 -----
