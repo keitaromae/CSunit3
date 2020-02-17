@@ -38,7 +38,7 @@ Creating online database that can store books virtually. This database should sh
 
 ### Success criteria
 
-These are measurable outcomes
+These are the measurable outcomes
 
 1. Database can be edit by the user. (del, add and rewrite)
 1. Every book should have labeled title, author, genre and pages.
