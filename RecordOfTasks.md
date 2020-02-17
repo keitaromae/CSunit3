@@ -23,7 +23,11 @@ This is the email sent from my client.
 ```
 Hello, Keitaro
 
-Currently, my desk is messy because of a lot of books and I'm not really good at organizing my stuff. At the moment, there is no way to organize my books. Besides, I would like to categorize these books and have something like a database so that I can pick up a proper book whenever I want. In the database, I want you to record the title, the author, the genre, pages and until where I read. Lastly, I want the system to be only accessed by me!
+Currently, my desk is messy because of a lot of books and I'm not really good at organizing my stuff. 
+At the moment, there isno way to organize my books. Besides, I would like to categorize these books 
+and have something like a database so that I can pick up a proper book whenever I want. In the database,
+I want you to record the title, the author, the genre, pages and until where I read. 
+Lastly, I want the system to be only accessed by me!
 Thank you!
 
 Fuma Ito
