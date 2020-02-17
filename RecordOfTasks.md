@@ -4,8 +4,8 @@ This table reflects the five stages of design: Planning, design, development, te
 
 | Task # | Planned Action | Expected outcome | Time Estimated | Target Completion | Criteria |
 |--------|----------------|------------------|----------------|-------------------|----------|
-|    1   | **Planning:** meeting with client for the first conversation | Asked basic questions to get some ideas about the offer | 30 min |                   |          |
-|    2   |                |                  |                |                   |          |
+|    1   | **Planning:** meeting with client for the first conversation | Asked basic questions to get some ideas about the offer | 30 min |                   |     A     |
+|    2   | **Planning:** meeting with client to check our success criteria and measurabe outcomes | Got some several additions to my criteria | 10 min |                   |      A    |
 |    3   |                |                  |                |                   |          |
 
 Table of contents
@@ -17,6 +17,30 @@ Table of contents
 
 Planning
 -------
+### Defining problem
+Knowing the issues that client is facing and reason why they need this program for.
+This is the email sent from my client.
+```
+Hello, Keitaro
+
+Currently, my desk is messy because of a lot of books and I'm not really good at organizing my stuff. At the moment, there is no way to organize my books. Besides, I would like to categorize these books and have something like a database so that I can pick up a proper book whenever I want. In the database, I want you to record the title, the author, the genre, pages and until where I read. Lastly, I want the system to be only accessed by me!
+Thank you!
+
+Fuma Ito
+```
+
+### Solution proposed
+Creating online database that can store books virtually. This database should show every book that he owns and several data of each of his books. It should organize books by its title, author, genre and pages that client last read. This database will be only used by one user(Fuma).
+
+### Success criteria
+
+These are measurable outcomes
+
+1. Database can be edit by the user. (del, add and rewrite)
+1. Every book should have labeled title, author, genre and pages.
+1. Database should be organized by its genre or by an author.
+1. Every instruction or manpage will be written in easy language not in technical words.
+1. Need software that can be used by himself. (secured account)
 
 Design
 -----
@@ -24,7 +48,7 @@ Design
 Development
 -----
 
-**hashlib**
+### hashlib
 ```
 import myLib
 
@@ -57,7 +81,7 @@ else:
     print("Login invalid")
 ```
 
-**Registration**
+### Registration
 1. Input username
 2. Input password
 3. Confirm password
@@ -101,7 +125,7 @@ user['username'] = username
 user['password-hash'] = key
 user['salt'] = salt
 ```
-**manipulating strings**
+### Manipulating strings
 ```
 # Question 1
 # open the txt file
@@ -156,7 +180,7 @@ for letter in extract:
 
 print(total)
 ```
-**Encrypting the message**
+### Encrypting the message
 ```
 print("This program encrypts the inputted letter into unicode")
 print("Type your message here: ")
