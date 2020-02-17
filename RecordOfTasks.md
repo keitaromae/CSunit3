@@ -34,10 +34,11 @@ Fuma Ito
 ```
 
 ### Solution proposed
+
 Creating online database that can store books virtually. This database should show every book that he owns and several data of each of his books. It should organize books by its title, author, genre and pages that client last read. This database will be only used by one user(Fuma).
 
 ### Success criteria
-
+**Book inventory:**
 These are the measurable outcomes
 
 1. Database can be edit by the user. (del, add and rewrite)
