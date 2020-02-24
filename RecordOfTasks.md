@@ -202,5 +202,80 @@ for letter in message:
     print(newletter)
 ```
 
+### Bank account
+```
+customer1 = {'FirstName': 'Filip',
+             'LastName': 'Keitaro',
+             'AccNum': '00001',
+             'PIN': '1119',
+             'Balance': '5B',
+             'Age': '18',
+             'contact': 'filip@keitaro.jp'}
+
+def deposit(CustomerDict, Amount):
+    # This function deposits amount in the customer dictionary
+    CustomerDict['Balance'] += Amount
+    print(f'New balance is {CustomerDict["Balance"]}')
+
+def checkbalance(CustomerDict):
+    # This function prints the amount of balance left in the account
+    print(f'Your current balance is {CustomerDict["Balance"]}')
+
+def withdraw(CustomerDict, Amount):
+    # This function subtracts inputted amount from the bank account
+    CustomerDict['Balance'] - Amount
+    print(f'You withdraw {Amount} and {CustomerDict["Balance"]} left in Account')
+```
+### My first OOP
+```
+class Dogs:
+    # Class
+    species = 'mammal'
+    # Initializer
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+def get_biggest_number (*args):
+    biggest = max(args)
+    print(f'The oldest is {biggest}')
+
+# Instantiate the Dog object
+a = Dogs("Kei", 3)
+b = Dogs("Taro", 2)
+c = Dogs("Mae", 7)
+
+get_biggest_number(a.age, b.age, c.age)
+```
+
+### Maxima.py
+```
+import math
+
+import matplotlib.pyplot as plt
+
+
+step = 0.001
+max_t = 50
+number_points = max_t / step
+t = [0]
+for n in range(number_points):
+    t.append(t[-1] + step)
+f = [abs(3*math.sin(0.3*x)) for x in t]
+
+plt.plot(t, f)
+plt.show()
+
+diff = [0, 0]
+zeros = [0, 0]
+for x in range(number_points-1):
+    diff.append(f[x]-f[x+1])
+
+
+
+print(len(t), len(diff))
+plt.plot(t, diff, 'r')
+plt.show()
+```
 Testing
 -----
