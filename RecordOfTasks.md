@@ -130,6 +130,9 @@ user['username'] = username
 user['password-hash'] = key
 user['salt'] = salt
 ```
+I've imported "getpass" but it didn't work out in my code.
+Getpass is the line that makes your inputted password non-visible.
+
 ### Manipulating strings
 ```
 # Question 1
