@@ -1,0 +1,59 @@
+python oop dogs assignment
+
+```
+class Dogs:
+    # Class
+    species = 'mammal'
+    # Initializer
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    # instance method
+    def description(self):
+        return f"{self.name} is {self.age} years old"
+
+    # instance method
+    def speak(self, sound):
+        return f"{self.name} says {sound}"
+
+    # instance method
+    def birthday(self):
+        self.age += 1
+
+
+def get_biggest_number (*args):
+    biggest = max(args)
+    print(f'The oldest is {biggest}')
+
+# Instantiate the Dog object
+a = Dogs("Kei", 3)
+b = Dogs("Taro", 2)
+c = Dogs("Mae", 7)
+
+get_biggest_number(a.age, b.age, c.age)
+
+# instantiate the Dog object
+mikey = Dogs("Mikey", 6)
+
+# call our instance methods
+print(mikey.description())
+print(mikey.speak("wan wan"))
+
+# call our instance methods
+mikey.birthday()
+
+class pets(Dogs):
+    def petinfo(self):
+        return f"{self.name} is {self.age} years old"
+
+km = pets("KM", 12)
+wazowski = pets("waz", 3)
+sponge = pets("sponge", 5)
+
+print("I have 3 dogs.")
+print(km.petinfo())
+print(wazowski.petinfo())
+print(sponge.petinfo())
+print("They are all mammals")
+```
