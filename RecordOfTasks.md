@@ -277,5 +277,55 @@ print(len(t), len(diff))
 plt.plot(t, diff, 'r')
 plt.show()
 ```
+
+### thefumabook_ui.py
+trouble shooting and discovering way to show new windows.
+```
+from thefumabook_ui import Ui_MainWindow
+import sys
+from PyQt5.QtWidgets import QApplication, QMainWindow
+from register_ui import Ui_register_2
+
+
+class thefumabook_ui(QMainWindow, Ui_MainWindow):
+    def __init__(self, parent=None):
+        super(thefumabook_ui, self).__init__(parent)
+        self.setupUi(self)
+
+        # call back
+        self.username_in.setPlaceholderText(" Enter username")
+        self.password_in.setPlaceholderText(" Enter password")
+        self.pushButton_register.clicked.connect(self.regpg)
+
+    def regpg(self):
+        page = register(self)
+        page.show()
+
+class register(Ui_register_2):
+    def __init__(self, parent=None):
+        super(register, self).__init__(parent)
+        self.setupUi(self)
+
+        # call back
+        self.username_in.setPlaceholderText(" Enter username")
+        self.password_in.setPlaceholderText(" Enter password")
+        self.pushButton_back.clicked.connect(self.mainmenu)
+
+    def mainmenu(self):
+        page = thefumabook_ui()
+        page.show()
+
+
+
+
+
+# small program to start the application
+app = QApplication(sys.argv)
+form = thefumabook_ui()
+form.show()
+app.exec_()
+```
+
+
 Testing
 -----
