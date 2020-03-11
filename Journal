@@ -41,3 +41,9 @@
   
   *things to do
   -Coding homework OOP
+
+3/11 2020
+
+  Started working on code part of "thefumabook." I've already created interface design and in current class, we are trying to
+  figure out several things by using our own aknowledges. Today in class, I finally successed to create a line that jumps to
+  selected window. Since I had 2 main windows, my program didn't work. After I remake mine in to dialog it worked successfully.
