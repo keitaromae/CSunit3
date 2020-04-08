@@ -47,8 +47,22 @@ These are the measurable outcomes
 1. Every instruction or manpage will be written in easy language not in technical words.
 1. Need software that can be used by himself. (secured account)
 
+### Connecting a database file
+**Creating Fuma's Book table:**
+Creating the table by using .csv db
+By deciding the number of list at first and then inputting your clients data.
+ex. "La metamorfosi....."
+```
+title, year, author, pg#, last_read, last_pg, genre
+La metamorfosi, 1915, Franz Kafka, ?, ?, ?, Fantasy Fiction
+Le Petit Prince, 1943, Saint-Exupery, ?, ?, ?, juvenile literature
+```
+
 Design
 -----
+### Ui Concept
+Ui design concept of "the fumabook" are inside the folder "the fumabook" unit 3 repository.
+
 
 Development
 -----
@@ -329,3 +343,49 @@ app.exec_()
 
 Testing
 -----
+### Connecting link to the button
+**Tested if the button actually works**
+
+In my previous work, I added some page links to button "register" and "exit."
+
+- As you can see from the code below, I defined regpg which will open new tab.
+```
+class thefumabook_ui(QMainWindow, Ui_MainWindow):
+    def __init__(self, parent=None):
+        super(thefumabook_ui, self).__init__(parent)
+        self.setupUi(self)
+
+        # call back
+        self.username_in.setPlaceholderText(" Enter username")
+        self.password_in.setPlaceholderText(" Enter password")
+        self.pushButton_register.clicked.connect(self.regpg)
+        self.pushButton_exit.clicked.connect(self.close)
+
+
+    def regpg(self):
+        page = register(self)
+        page.show()
+```
+
+- Although button didn't work as I wished. So I thought something is wrong with my register_ui.py page.
+\original code
+```
+class Ui_register_2(MainWindow):
+
+    def setupUi(self, register_2):
+        register_2.setObjectName("register_2")
+        register_2.resize(804, 600)
+        register_2.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.label_thefumabook_2 = QtWidgets.QLabel(register_2)
+        self.label_thefumabook_2.setGeometry(QtCore.QRect(210, 130, 361, 71))
+        self.label_thefumabook_2.setStyleSheet("font: 50pt \"Facebook Letter Faces\";\n"
+"color: rgb(80, 98, 168);\n"
+"\n"
+"\n"
+"")
+```
+- realized the error on first line
+instead of ```class Ui_register_2(MainWindow):```
+it should be ```class Ui_register_2(QDialog):```
+
+- After rewriting this 1 line it worked fine.
