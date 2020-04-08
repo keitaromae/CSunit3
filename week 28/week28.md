@@ -34,7 +34,15 @@ print(",".join(sorted(list(set(words)))))
 **Q4**
 
 **Q5**
-
+```
+n=int(input("Enter your dogs age:"))
+young=n*10.5
+old=2*10.5 + 4*(n-2)
+if n > 2:
+    print("your dogs age is {} years old".format(old))
+elif n <= 2:
+    print("your dogs age is {} years old".format(young))
+```
 **Q6**
 
 
