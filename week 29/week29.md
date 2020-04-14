@@ -1,7 +1,43 @@
 ### ①　Unit 3:
 
-### ②　Coding practice:
+***UPDATES ON MY "record of tasks" md***
 
+### ②　Coding practice:
+**Q1**
+```
+first = input("Enter your first name: ")
+last = input("Enter your last name: ")
+num = int(input("Enter a random number from range 1-100: "))
+
+if num > 100:
+    print("Please input number less than 100 bigger than 0")
+
+elif num < 0:
+    print("Please input number bigger than 0 less than 100")
+
+else:
+    print("This is your new account")
+    print("{}.{}{}@uwcisak.jp".format(first, last, num))
+```
+
+**Q2**
+```
+import uuid
+
+x=int(input("How long your code to be: "))
+
+def randompass(string_length = x):
+    random = str(uuid.uuid4())
+    random = random.upper()
+    random = random.replace("-", "")
+    return random[0:string_length]
+
+print(randompass(x))
+```
+
+**Q3**
+```
+```
 ### ③　Syllabus Questions:
 Building my own PC
 
