@@ -48,14 +48,18 @@ elif n <= 2:
 
 
 ### ③　Syllabus Questions:
-**Q1** In order to dsign an app for mobile devices, it is crucial to think about the letter size.
-there are some people who has visus senilis or some other eye problems.
+**Q1** In order to dsign an app for mobile devices, it is crucial to think about the letter and font sizes.
+there are some people who has visus senilis or some other visual problems.
 
 **Q2**
 A, B,	A and B,	C,	AB nor C
+
 0	0	0	0	1
+
 0	1	0	0	1
+
 1	0	0	1	0
+
 1	1	1	1	0
 
 **Q3**
