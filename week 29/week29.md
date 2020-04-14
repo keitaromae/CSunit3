@@ -35,3 +35,13 @@ Seagate BarraCuda 2TB Hard Drive
 
 NZXT H700i ATX Computer Case
 (Link) - https://amzn.to/2XxNgUt
+
+Total budget: apx $2500
+
+RTX 2080 Ti 11GB for the GPU. ***GPU graphics processing unit is a specialized electronic circuit designed to rapidly manipulate and alter memory to accelerate the creation of images in a frame buffer intended for output to a display device.***
+
+Intel core i9 9900K processor. ***electronic circuitry within a computer that executes instructions that make up a computer program.***
+
+CORSAIR Vengeance RGB PRO 32GB DDR4 RAM 3200. ***form of computer memory that can be read and changed in any order, typically used to store working data and machine code.***
+
+NZXT Kraken X72 360mm AIO Liquid Cooler. ***using NZXT's liquid cooler for our cooling system, compare to normal air cooling, it is more efficient and also visually attractive.***
