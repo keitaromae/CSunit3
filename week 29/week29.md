@@ -36,8 +36,41 @@ print(randompass(x))
 ```
 
 **Q3**
+scatter graph:
+
+comparison of Corona cases in japan and price of gold in both April's data.
+
+**x axis:** number of cases in Japan
+
+**y axis:** price of gold
 ```
+import matplotlib.pyplot as pyplot
+import csv
+
+with open('covid-19.csv') as corona:
+    data = []
+    values = csv.reader(corona, delimiter=",")
+    for row in values:
+        data.append(row)
+
+print(data)
+#date
+x = data[0]
+#number
+y = data[1]
+
+pyplot.plot(x, y)
+pyplot.xlabel('covid cases in Japan (per million)')
+pyplot.ylabel('gold price (USD/oz)')
+
+pyplot.show()
 ```
+
+```
+15, 17, 20, 23, 25, 28, 30, 30, 33, 36 #cases per million
+1580, 1580, 1625, 1635, 1634, 1661, 1661, 1738, 1738, 1742 #(USD/oz)
+```
+
 ### ③　Syllabus Questions:
 Building my own PC
 
