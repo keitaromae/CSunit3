@@ -52,6 +52,7 @@ elif n <= 2:
 there are some people who has visus senilis or some other visual problems.
 
 **Q2**
+
 A, B,	A and B,	C,	AB nor C
 
 0	0	0	0	1
