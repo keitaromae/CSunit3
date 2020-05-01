@@ -417,17 +417,16 @@ Evaluation
 -------
 ### Summary
 
-Success criteria
+**Book inventory:**
+These are the measurable outcomes
 
-Book inventory: These are the measurable outcomes
+1. Database can be edit by the user. (del, add and rewrite)
+1. Every book should have labeled title, author, genre and pages.
+1. Database should be organized by its genre or by an author.
+1. Every instruction or manpage will be written in easy language not in technical words.
+1. Need software that can be used by himself. (secured account)
 
-Database can be edit by the user. (del, add and rewrite)
-Every book should have labeled title, author, genre and pages.
-Database should be organized by its genre or by an author.
-Every instruction or manpage will be written in easy language not in technical words.
-Need software that can be used by himself. (secured account)
-
-According to this success criteria, program "The fumabook" is acquiring its benchline. 
+Regarding to this success criteria, program "The fumabook" is acquiring its benchline. 
 Every book owned by Fuma can be add, delete and reedit by him. All of its information will be stored and also shown by graph on database. He has his own secured account and password created by hashlib. This program also comes with easy, understandable
 instruction manual without any terminologies.
 
