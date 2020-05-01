@@ -415,6 +415,20 @@ it should be ```class Ui_register_2(QDialog):```
 
 Evaluation
 -------
+### Summary
+
+Success criteria
+
+Book inventory: These are the measurable outcomes
+
+Database can be edit by the user. (del, add and rewrite)
+Every book should have labeled title, author, genre and pages.
+Database should be organized by its genre or by an author.
+Every instruction or manpage will be written in easy language not in technical words.
+Need software that can be used by himself. (secured account)
+
+According to this success criteria, program "The fumabook" is acquiring its benchline. 
+
 
 References
 -------
