@@ -428,6 +428,7 @@ Every instruction or manpage will be written in easy language not in technical w
 Need software that can be used by himself. (secured account)
 
 According to this success criteria, program "The fumabook" is acquiring its benchline. 
+Every book owned by Fuma can be add, delete and reedit by him. All of its information will be stored and also shown by
 
 
 References
