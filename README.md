@@ -14,6 +14,8 @@ Table of contents
 1. [Design](#Design)
 1. [Development](#Development)
 1. [Testing](#Testing)
+1. [Evaluation](#Evaluation)
+1. [References](#References)
 
 Planning
 -------
@@ -410,3 +412,9 @@ instead of ```class Ui_register_2(MainWindow):```
 it should be ```class Ui_register_2(QDialog):```
 
 - After rewriting this 1 line it worked fine.
+
+Evaluation
+-------
+
+References
+-------
