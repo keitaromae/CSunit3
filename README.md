@@ -75,7 +75,10 @@ Ui design concept of "the fumabook" are inside the folder "the fumabook" unit 3 
 Development
 -----
 
-### hashlib
+First few codes on this section are from in class works that has not direct relation with my project "the fumabook."
+Sorry for any of inconvenience.
+
+### hashlib (in class ver)
 ```
 import myLib
 
@@ -108,7 +111,7 @@ else:
     print("Login invalid")
 ```
 
-### Registration
+### Registration (in class ver)
 1. Input username
 2. Input password
 3. Confirm password
@@ -155,7 +158,7 @@ user['salt'] = salt
 I've imported "getpass" but it didn't work out in my code.
 Getpass is the line that makes your inputted password non-visible.
 
-### Manipulating strings
+### Manipulating strings (in class ver)
 ```
 # Question 1
 # open the txt file
@@ -210,7 +213,7 @@ for letter in extract:
 
 print(total)
 ```
-### Encrypting the message
+### Encrypting the message (in class ver)
 ```
 print("This program encrypts the inputted letter into unicode")
 print("Type your message here: ")
@@ -224,7 +227,7 @@ for letter in message:
     print(newletter)
 ```
 
-### Bank account
+### Bank account (in class ver)
 ```
 customer1 = {'FirstName': 'Filip',
              'LastName': 'Keitaro',
@@ -248,7 +251,7 @@ def withdraw(CustomerDict, Amount):
     CustomerDict['Balance'] - Amount
     print(f'You withdraw {Amount} and {CustomerDict["Balance"]} left in Account')
 ```
-### My first OOP
+### My first OOP (in class ver)
 ```
 class Dogs:
     # Class
@@ -270,7 +273,7 @@ c = Dogs("Mae", 7)
 get_biggest_number(a.age, b.age, c.age)
 ```
 
-### Maxima.py
+### Maxima.py (in class ver)
 ```
 import math
 
@@ -300,8 +303,13 @@ plt.plot(t, diff, 'r')
 plt.show()
 ```
 
-### thefumabook_ui.py
-trouble shooting and discovering way to show new windows.
+### thefumabook_ui.py (thefumabook project)
+trouble shooting and discovering way to show new windows. In order to make all the pages I created on Qt designer into one big program, I have to "link" them by using several buttons and codes. In this section I putted some links into the button so the user can jump on to appropriate page.
+
+1. Create a link `self.pushButton_register.clicked.connect(self.regpg)`
+2. Define `regpg(self)`
+3. If this button were clicked, open and show this page
+
 ```
 from thefumabook_ui import Ui_MainWindow
 import sys
@@ -348,8 +356,20 @@ form.show()
 app.exec_()
 ```
 
-### Log in password
+### Log in password (thefumabook project)
 created log in system by using hash code and salt protection.
+Since my client needed his own secured account, I decided to add this secure log in feature. By stepping this process, client can now own secured account and also other people can add their inventories in different account.
+
+1. convert 64 bytes into 64 ascii text
+2. convert text and symbols using UTF-8 standard
+3. Hash the encoded password using the 64 bytes-long salt to a default of 64 bytes. Repeats the process 100000 times to increase randomness.
+4. Converts each of the 64 bytes of the hash to a two-bytes Hexadecimal string
+5. Return a string where the salt is first followed by the hashed password
+6. Recover the salt as the first 64 characters of the hash
+7. Recover the password as the characters of the hash from position 64 to the end
+8. Creates a hash with the recovered salt for the password provided
+9. If the stored password and the provided passwords are the same, then the hashes will be the same, and the return value is **True**
+
 ```
 import hashlib, binascii, os
 
@@ -439,3 +459,5 @@ instruction manual without any terminologies.
 
 References
 -------
+**Week 29:** e-learning secure log in slide
+
