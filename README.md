@@ -4,9 +4,15 @@ This table reflects the five stages of design: Planning, design, development, te
 
 | Task # | Planned Action | Expected outcome | Time Estimated | Target Completion | Criteria |
 |--------|----------------|------------------|----------------|-------------------|----------|
-|    1   | **Planning:** meeting with client for the first conversation | Asked basic questions to get some ideas about the offer | 30 min |                   |     A     |
-|    2   | **Planning:** meeting with client to check our success criteria and measurabe outcomes | Got some several additions to my criteria | 10 min |                   |      A    |
-|    3   |                |                  |                |                   |          |
+|    1   | **Planning:** meeting with client for the first conversation | Asked basic questions to get some ideas about the offer | 30 min |         yes          |     A     |
+|    2   | **Planning:** meeting with client to check our success criteria and measurabe outcomes | Got some several additions to my criteria | 10 min |          yes         |      A    |
+|    3   | **Designing:** meeting with my client to sort out their favorite UI designs | Creating rough draft on Qt designer                 | 50 mins total including designing time               |       yes            |    B      |
+|    4   | **Designing:** Brushing up all the UI designs by actually converting it into pycharm | Export from Qt convert it into pycharm | 1hr50min | yes | B & C|
+|    5   | **Development:** Editting few codes on pycharm. ex.changing button placements and adding links to them | More of a connecting several "pages" I created on Qt into one solid program by using pycharm | 2hr apx |yes | C |
+|    6   | **Development:** Adding more features, secured logins and tables that suits client's needs | hashlib password and login system, simple graph chart to make inventory visible | 2hrs apx |yes | C |
+|    7   | **Testing:** testing and trouble shooting | I did the first test on checking button links and pages appearing | 1hr |yes | D |
+|    8   | **Testing:** testing and trouble shooting | login system and editting inventory graph | 3hrs |yes | D |
+|    9   | **Evaluation:** reviewing my own work using success criteria I made with my client | Make sure all the box will be ticked without any problem | 5 mins |yes | E? |
 
 Table of contents
 ----
